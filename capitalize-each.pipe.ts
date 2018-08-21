@@ -25,7 +25,7 @@ export class CapitalizeEachPipe implements PipeTransform {
     const pattern = /\S+/gi;
     let result = value;
     result = result.replace(pattern, match => match[0].toUpperCase() + match.slice(1));
-    return decodeURI( result);
+    return result;
   }
 
 }
